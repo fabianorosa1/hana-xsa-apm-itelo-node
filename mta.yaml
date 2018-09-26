@@ -1,4 +1,4 @@
-ID: iteloNode
+ID: hana-xsa-apm-itelo-node
 _schema-version: '3.1'
 version: 0.0.1
 modules:
@@ -9,7 +9,8 @@ modules:
       memory: 256M
       disk-quota: 256M
     requires:
-      - name: iteloNode-hdi-container
+      - name: itelo-node-hdi-container
+ 
   - name: srv
     type: nodejs
     path: srv
@@ -21,9 +22,21 @@ modules:
         properties:
           url: '${default-url}'
     requires:
-      - name: iteloNode-hdi-container
+      - name: itelo-node-hdi-container
+
+  - name: app
+    type: html5
+    path: app
+    requires:
+      - name: srv_api
+        group: destinations
+        properties:
+          name: srv_api
+          url: '~{url}'
+          forwardAuthToken: true
+          
 resources:
-  - name: iteloNode-hdi-container
+  - name: itelo-node-hdi-container
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container

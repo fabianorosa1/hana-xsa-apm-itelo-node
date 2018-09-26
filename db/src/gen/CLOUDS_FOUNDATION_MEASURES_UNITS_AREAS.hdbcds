@@ -1,0 +1,4 @@
+entity CLOUDS_FOUNDATION_MEASURES_UNITS_AREAS {
+  NAME : String(5000);
+  key CODE : String(3);
+};

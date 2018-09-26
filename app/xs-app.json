@@ -1,0 +1,17 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "none",
+	"routes": [{
+		"source": "/odata/v4/my.bookshop.CatalogService",
+		"destination": "js_srv_api"
+	}, {
+		"source": "/getSessionInfo",
+		"destination": "js_srv_api"
+	}, {
+		"source": "/node/(.*)",
+		"destination": "js_srv_api"
+	}, {
+		"source": "/(.*)",
+		"localDir": "resources"
+	}]
+}

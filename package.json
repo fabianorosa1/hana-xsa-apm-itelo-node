@@ -1,13 +1,21 @@
 {
-  "name": "iteloNode",
+  "name": "hana-xsa-apm-itelo-node",
   "description": "Reference application built according to the CAP model",
   "version": "1.0.0",
   "dependencies": {
-    "@sap/cds": ">=2.8"
+    "@sap/cds": ">=2.9",
+    "hana-xsa-apm-itelo": "git://github.com/jungsap/hana-xsa-apm-itelo"
+  },
+   "devDependencies": {
+    "csv-streamify": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "sqlite3": "4.0.1",
+    "standard": "^10.0.3"
   },
   "scripts": {
     "build": "cds build/all --clean",
-    "watch": "nodemon -w . -i node_modules/**,.git/** -e cds -x npm run build"
+    "watch": "nodemon -w . -i node_modules/**,.git/** -e cds -x npm run build",
+    "postinstall": "node postinstall.js"
   },
   "cds": {
     "data": {

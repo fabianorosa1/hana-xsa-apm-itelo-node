@@ -1,0 +1,16 @@
+entity CLOUDS_FOUNDATION_ADDRESSES {
+  MODIFIEDAT : UTCDateTime;
+  CREATEDAT : UTCDateTime;
+  CREATEDBY : String(255);
+  MODIFIEDBY : String(255);
+  key ID : String(36);
+  CITYNAME : String(40);
+  POSTALCODE : String(10);
+  STREETNAME : String(60);
+  HOUSENUMBER : String(10);
+  TYPE : String(2);
+  VALIDITYSTARTDATE : UTCDateTime;
+  VALIDITYENDDATE : UTCDateTime;
+  LATITUDE : Decimal(15, 12);
+  LONGITUDE : Decimal(15, 12);
+};

@@ -1,0 +1,4 @@
+entity CLOUDS_FOUNDATION_CURRENCIES {
+  NAME : String(5000);
+  key CODE : String(3);
+};

@@ -1,0 +1,9 @@
+entity CLOUDS_PRODUCTS_CATEGORIES {
+  MODIFIEDAT : UTCDateTime;
+  CREATEDAT : UTCDateTime;
+  CREATEDBY : String(255);
+  MODIFIEDBY : String(255);
+  key ID : String(36);
+  NAME : String(5000) not null;
+  DESCRIPTION : String(5000);
+};

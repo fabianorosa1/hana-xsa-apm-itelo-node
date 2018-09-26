@@ -1,0 +1,4 @@
+entity CLOUDS_PRODUCTS_STOCKAVAILABILITIES {
+  NAME : String(5000);
+  key CODE : Integer;
+};
