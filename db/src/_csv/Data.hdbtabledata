@@ -1,5 +1,5 @@
 {
-	"format_version": 1,
+	"format_version": 1,   
 	"imports": [
 		{
 			"target_table": "CLOUDS_PRODUCTS_PRODUCTS",

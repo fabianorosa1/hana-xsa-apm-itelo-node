@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"postinstall": "node .install.js && cds build/all --project .. --clean",
-		"start": "node ./node_modules/@sap/cds/bin/cds.js serve gen/csn.json"
+		"start": "node server"
 	},
 	"engines": {
 		"node": "8.x",
